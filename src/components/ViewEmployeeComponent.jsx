@@ -15,6 +15,9 @@ export class ViewEmployeeComponent extends Component {
       this.setState({ employee: res.data });
     });
   }
+  back() {
+    this.props.history.push('/employees');
+  }
   render() {
     return (
       <div>
@@ -40,6 +43,15 @@ export class ViewEmployeeComponent extends Component {
                 <b> {this.state.employee.emailId} </b>
               </div>
             </div>
+          </div>
+          <div>
+            <button
+              className='btn btn-danger'
+              onClick={this.back.bind(this)}
+              style={{ marginLeft: '10px' }}
+            >
+              Back
+            </button>
           </div>
         </div>
       </div>

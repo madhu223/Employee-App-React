@@ -82,7 +82,7 @@ class ListEmployeeComponet extends Component {
                     </button>
                     <button
                       style={{ margin: '10px' }}
-                      className='btn btn-danger'
+                      className='btn btn-info'
                       onClick={() => this.viewEmployee(employee.id)}
                     >
                       View

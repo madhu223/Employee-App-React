@@ -91,6 +91,7 @@ export class CreateEmployeeComponent extends Component {
                       className='form-control'
                       value={this.state.firstName}
                       onChange={this.changeFirstNameHandler}
+                      required
                     />
                   </div>
                   <div className='from-group'>
@@ -102,6 +103,7 @@ export class CreateEmployeeComponent extends Component {
                       className='form-control'
                       value={this.state.lastName}
                       onChange={this.changeLastNameHandler}
+                      required
                     />
                   </div>
                   <div className='from-group'>
@@ -112,6 +114,7 @@ export class CreateEmployeeComponent extends Component {
                       className='form-control'
                       value={this.state.emailId}
                       onChange={this.changeEmailHandler}
+                      required
                     />
                   </div>
                   <button
